@@ -1,0 +1,14 @@
+to get window builder pro -> https://www.eclipse.org/windowbuilder/
+window builder pro tut -> http://www.youtube.com/watch?v=wknEVG9bJic
+
+connect to mysql DB ->http://www.rackspace.com/knowledge_center/article/mysql-connect-to-your-database-remotely
+set mysql server ->http://www.youtube.com/watch?v=zU_Bpbt8NTE
+connect with jdbc ->http://www.youtube.com/watch?v=BCqW5XwtJxY
+
+QR ZXing&QRGen tut ->http://viralpatel.net/blogs/create-qr-codes-java-servlet-qr-code-java/
+another qr tut	->https://javamagic.wordpress.com/tag/java/
+
+scrollpane solution?->http://stackoverflow.com/questions/11995516/use-a-absolute-layout-inside-a-jscrollpane\
+
+172.166.235.60
+172.16.235.160

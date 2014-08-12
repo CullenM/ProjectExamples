@@ -1,0 +1,47 @@
+<!-- Cullen McDevitt -->
+
+<html>
+ <head>
+ <meta charset="utf-8">
+  <title>"9.25"</title>
+   <style type ="text/css">
+	form {text-align: center;}
+  </style>
+  <script type="text/javascript">
+	var num;
+	function getNum(){
+		document.getElementById("nextBttn").style.visibility="hidden";
+		document.getElementById("answer").innerHTML="";
+		num=Math.floor((Math.random()*1000)+1);
+		var guessButton = document.getElementById( "guessBttn" );
+		guessButton.addEventListener( "click", check, false );
+	}
+	function check(){
+		var guessField=document.getElementById("guessTxt");
+		guessNum=parseInt(guessField.value);
+		if (guessNum==num){
+			document.getElementById("answer").innerHTML="Congratulations! You guessed the number!";
+			document.getElementById("nextBttn").style.visibility="visible";
+			var nextButton = document.getElementById( "nextBttn" );
+			nextButton.addEventListener( "click", getNum, false );
+			}
+		else if(guessNum<num)
+			document.getElementById("answer").innerHTML="Too low. Try again.";
+		else
+			document.getElementById("answer").innerHTML="Too high. Try again.";
+		document.getElementById("guessTxt").value="";
+	}
+	window.addEventListener( "load", getNum, false );
+  </script>
+ <head>
+ <body>
+	<form action="#">
+		<script type="text/javascipt"></script>
+		<p>Guess the number between 1 and 1000.</p>
+		<input id= "guessTxt" type="number">
+		<input id="guessBttn" type="button" value="Guess">
+		<p id="answer">
+		<p><input id="nextBttn" type="button" value="Play Again"></p>
+	</form>
+ </body>
+</html>
